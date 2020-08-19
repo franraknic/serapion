@@ -1,0 +1,73 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Serapion API",
+        "_postman_id": "0f7a2ae9-b05b-487c-87ff-2649c38592d7",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "general",
+            "description": "",
+            "item": [
+                {
+                    "name": "movies\/{name}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/api",
+                            "path": "movies\/:name",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "movie\/{movie_id}",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "localhost\/api",
+                            "path": "movie\/:movie_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}
