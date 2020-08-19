@@ -34,9 +34,7 @@ $ composer install --ignore-platform-reqs
 
 #### Create the database
 
-##### Option #1
 to create the database you can visit the [phpMyAdmin](http://localhost:8000/) login with u:root p:root and use the web interface to create a database named "movies" or any name that you changed in the www/api/.env DB_DATABASE variable
-
 
 enter the running docker container using the command:
 
@@ -56,14 +54,6 @@ de45a722c79e        phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   5 hours a
 f839448a756c        serapion_www            "docker-php-entrypoi…"   5 hours ago         Up 5 hours          0.0.0.0:80->80/tcp       serapion_www_1
 6fd77fcc44b1        mariadb                 "docker-entrypoint.s…"   5 hours ago         Up 5 hours          0.0.0.0:3306->3306/tcp   serapion_db_1
 ```
-
-##### Option #2
-now you can use:
-```sh
-$ mysql -u root -p
-```
-
-to use the commandline to create the databse called movies
 
 ##### Create the databse schema and populate with some data
 so use the container name listed under the 80:80 port, in my case serapion_www_1.
